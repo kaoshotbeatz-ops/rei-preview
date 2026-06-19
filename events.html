@@ -6,15 +6,15 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="cf6e99df9e5e5818ba3a36f837806a1fd5fbba66b38c014d73b1e274974c9ecd" />
+<meta name="csrf-token" content="05c10216136dae4349584a382919982c5d56f0d6f6d39c64203c51e5a74a9a85" />
 <title>Equity Paradox Conference Registration · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606191003 />
-<link rel="stylesheet" href="css/theme.css?v=202606191003 />
-<link rel="stylesheet" href="css/pack.css?v=202606191003 />
+<link rel="stylesheet" href="css/site.css?v=202606191011 />
+<link rel="stylesheet" href="css/theme.css?v=202606191011 />
+<link rel="stylesheet" href="css/pack.css?v=202606191011 />
 </head>
 <body>
 
@@ -101,8 +101,14 @@
 .ev-field label{display:block;font-size:.82rem;font-weight:400;color:#2a2a2a;margin-bottom:6px;letter-spacing:.02em}
 .ev-field input,.ev-field textarea{width:100%;padding:12px 14px;border:1px solid #c9c9c5;border-radius:4px;font-size:.98rem;font-weight:300;background:#fff;color:#222}
 .ev-field textarea{min-height:130px;resize:vertical}
-/* stay */
-.ev-stay{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:8px}
+/* stay — product-page layout: gallery left, details right */
+.stay-product{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,72px);align-items:center}
+.stay-gallery .main{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;display:block;margin-bottom:12px}
+.stay-gallery .thumbs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stay-gallery .thumbs img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;display:block}
+.stay-info .sub{color:var(--g);font-weight:400;letter-spacing:.04em;margin:0 0 6px;font-size:1rem}
+.stay-info .btn{margin-top:8px}
+@media(max-width:860px){.stay-product{grid-template-columns:1fr}}
 @media(max-width:860px){.ev-reg .inner{grid-template-columns:1fr;gap:24px}.ev-filter{display:flex;gap:22px}.ev-q{grid-template-columns:1fr}}
 @media(max-width:620px){.ev-prods{grid-template-columns:1fr;max-width:420px}}
 @media(max-width:560px){.ev-row{grid-template-columns:1fr}}
@@ -189,11 +195,21 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
 
   <section id="stay">
     <div class="w">
-      <div class="ev-stay">
-        <h1 style="margin:0">Book Your Stay</h1>
-        <a class="btn dark" href="https://www.reseze.net/servlet/SendPage?hotelid=1466&amp;skipfirstpage=true&amp;page=588589" target="_blank" rel="noopener">Reserve At Our Group Rate</a>
+      <div class="stay-product">
+        <div class="stay-gallery">
+          <img class="main" src="img/conf/hotel-pool.png" alt="Proximity Hotel pool">
+          <div class="thumbs">
+            <img src="img/conf/hotel-lounge.jpg" alt="Proximity Hotel lounge">
+            <img src="img/conf/hotel-fitness.jpg" alt="Proximity Hotel fitness studio">
+          </div>
+        </div>
+        <div class="stay-info">
+          <p class="sub">The Proximity Hotel · Greensboro, NC</p>
+          <h1>Book Your Stay</h1>
+          <p>For attendees traveling in, we’re proud to recommend Proximity Hotel as our partner for conference lodging. An employee-trust-owned hotel in Greensboro, Proximity pairs LEED Platinum sustainability and Four Diamond comfort with values that align with our work — including a publicly stated commitment to racial justice and fairness. Reserve within our group block to settle in at our special rate.</p>
+          <a class="btn dark" href="https://www.reseze.net/servlet/SendPage?hotelid=1466&amp;skipfirstpage=true&amp;page=588589" target="_blank" rel="noopener">Reserve At Our Group Rate</a>
+        </div>
       </div>
-      <p style="max-width:62ch">For attendees traveling in, we’re proud to recommend Proximity Hotel as our partner for conference lodging. An employee-trust-owned hotel in Greensboro, Proximity pairs LEED Platinum sustainability and Four Diamond comfort with values that align with our work — including a publicly stated commitment to racial justice and fairness. Reserve within our group block to settle in at our special rate.</p>
     </div>
   </section>
 </div>
@@ -229,7 +245,7 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606191003></script>
+<script src="js/site.js?v=202606191011></script>
 </body>
 </html>
 

@@ -6,15 +6,15 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="65bbd60066370b268ae8f60b5d94c97fe4da144c5eebc7baba8d95c4f94ca8f9" />
+<meta name="csrf-token" content="929cf2f232b645f3c93b7c6d0076c021014aff66c7988cf9d3e59a93dc6f886f" />
 <title>The Equity Paradox Conference · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606191003 />
-<link rel="stylesheet" href="css/theme.css?v=202606191003 />
-<link rel="stylesheet" href="css/pack.css?v=202606191003 />
+<link rel="stylesheet" href="css/site.css?v=202606191011 />
+<link rel="stylesheet" href="css/theme.css?v=202606191011 />
+<link rel="stylesheet" href="css/pack.css?v=202606191011 />
 </head>
 <body>
 
@@ -136,8 +136,14 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
 .cf .agenda li{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:26px 2px;border-bottom:1px solid rgba(255,255,255,.45);align-items:start}
 .cf .agenda b{font-weight:400;color:#fff;font-size:1.15rem;line-height:1.3}
 .cf .agenda span{color:#fff;font-size:1.15rem;font-weight:300}
-.cf .stay{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
-.cf .stay img{width:100%;height:230px;object-fit:cover;border-radius:14px;display:block}
+/* Book Your Stay — product-page layout: image gallery left, details right */
+.cf .stay-product{display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,6vw,72px);align-items:center}
+.cf .stay-gallery .main{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:6px;display:block;margin-bottom:12px}
+.cf .stay-gallery .thumbs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cf .stay-gallery .thumbs img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:6px;display:block}
+.cf .stay-info .sub{color:var(--g);font-weight:400;letter-spacing:.04em;margin:0 0 6px;font-size:1rem}
+.cf .stay-info .btn{margin-top:8px}
+@media(max-width:860px){.cf .stay-product{grid-template-columns:1fr}}
 .cf .regsplit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
 @media(max-width:860px){.cf .row,.cf .regsplit{grid-template-columns:1fr}.cf .sday{grid-template-columns:1fr;gap:28px}}
 @media(max-width:760px){.cf .stay{grid-template-columns:1fr}}
@@ -299,15 +305,20 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
 
   <section id="stay" style="background:var(--soft)">
     <div class="w">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:8px">
-        <h1 style="margin:0">Book Your Stay</h1>
-        <a class="btn dark" href="https://www.reseze.net/servlet/SendPage?hotelid=1466&amp;skipfirstpage=true&amp;page=588589" target="_blank" rel="noopener">Reserve At Our Group Rate</a>
-      </div>
-      <p style="max-width:62ch">For attendees traveling in, we’re proud to recommend Proximity Hotel as our partner for conference lodging. An employee-trust-owned hotel in Greensboro, Proximity pairs LEED Platinum sustainability and Four Diamond comfort with values that align with our work — including a publicly stated commitment to racial justice and fairness. Reserve within our group block to settle in at our special rate.</p>
-      <div class="stay">
-        <img src="img/conf/hotel-lounge.jpg" alt="Proximity Hotel lounge">
-        <img src="img/conf/hotel-pool.png" alt="Proximity Hotel pool">
-        <img src="img/conf/hotel-fitness.jpg" alt="Proximity Hotel fitness studio">
+      <div class="stay-product">
+        <div class="stay-gallery">
+          <img class="main" src="img/conf/hotel-pool.png" alt="Proximity Hotel pool">
+          <div class="thumbs">
+            <img src="img/conf/hotel-lounge.jpg" alt="Proximity Hotel lounge">
+            <img src="img/conf/hotel-fitness.jpg" alt="Proximity Hotel fitness studio">
+          </div>
+        </div>
+        <div class="stay-info">
+          <p class="sub">The Proximity Hotel · Greensboro, NC</p>
+          <h1>Book Your Stay</h1>
+          <p>For attendees traveling in, we’re proud to recommend Proximity Hotel as our partner for conference lodging. An employee-trust-owned hotel in Greensboro, Proximity pairs LEED Platinum sustainability and Four Diamond comfort with values that align with our work — including a publicly stated commitment to racial justice and fairness. Reserve within our group block to settle in at our special rate.</p>
+          <a class="btn dark" href="https://www.reseze.net/servlet/SendPage?hotelid=1466&amp;skipfirstpage=true&amp;page=588589" target="_blank" rel="noopener">Reserve At Our Group Rate</a>
+        </div>
       </div>
     </div>
   </section>
@@ -344,7 +355,7 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606191003></script>
+<script src="js/site.js?v=202606191011></script>
 </body>
 </html>
 
