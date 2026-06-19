@@ -6,15 +6,15 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="59e8ca0eec5bcbe92f9f08eae642e10f7876549a664f7520b16cc0ad152bdc8a" />
+<meta name="csrf-token" content="64f3108a32c0a6c9c7ea9754503ed5f12bf919e5fee56f2d246422e771821a85" />
 <title>Equity Paradox Conference Registration · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606190925 />
-<link rel="stylesheet" href="css/theme.css?v=202606190925 />
-<link rel="stylesheet" href="css/pack.css?v=202606190925 />
+<link rel="stylesheet" href="css/site.css?v=202606190933 />
+<link rel="stylesheet" href="css/theme.css?v=202606190933 />
+<link rel="stylesheet" href="css/pack.css?v=202606190933 />
 </head>
 <body>
 
@@ -72,20 +72,26 @@
 .cf .btn{display:inline-block;background:var(--band);color:#fff;padding:.85em 2.2em;border-radius:999px;font-weight:300;font-size:.92rem;letter-spacing:.04em;border:0;cursor:pointer}
 .cf .btn:hover{background:var(--g2)}
 .cf .btn.dark{background:#1a1a1a}.cf .btn.dark:hover{background:#000}
+.cf .btn.light{background:#f1f1ef;color:#2a2a2a}.cf .btn.light:hover{background:#fff}
 .cf .btn.block{display:block;text-align:center}
 .cf .band{background:var(--band);color:#fff}
 .cf .eyebrow{letter-spacing:.2em;text-transform:uppercase;font-size:.8rem;font-weight:400}
-/* hero */
-.ev-hero{text-align:center;border-top:5px solid #c0392b;padding:clamp(64px,9vw,110px) 0}
+/* hero (on the green band) */
+.ev-hero{text-align:center;border-top:5px solid #c0392b;padding:clamp(64px,9vw,104px) 0 clamp(40px,6vw,64px)}
 .ev-hero .eyebrow{color:rgba(255,255,255,.85);margin:0 0 22px}
 .ev-hero p.lead{max-width:56ch;margin:0 auto;color:rgba(255,255,255,.92);font-size:1.05rem}
-/* products */
-.ev-prods{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,40px);max-width:1000px;margin:0 auto}
+.ev-divider{border:none;border-top:1px solid rgba(255,255,255,.5);max-width:1080px;margin:0 auto}
+/* registration: left filter + product cards, all on the green band */
+.ev-reg{padding:clamp(48px,7vw,80px) 0}
+.ev-reg .inner{display:grid;grid-template-columns:170px 1fr;gap:clamp(28px,5vw,56px);align-items:start}
+.ev-filter a{display:block;color:rgba(255,255,255,.9);font-size:.82rem;font-weight:300;margin-bottom:12px;text-decoration:none}
+.ev-filter a:hover{color:#fff;text-decoration:underline}
+.ev-prods{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,34px)}
 .ev-card{display:flex;flex-direction:column}
-.ev-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;margin-bottom:20px}
-.ev-card h3{font-size:1.35rem;font-weight:300;margin:0 0 8px;color:#2a2a2a;line-height:1.25}
-.ev-card .price{font-weight:400;color:#2a2a2a;margin:0 0 18px;font-size:1rem}
-.ev-card select{width:100%;padding:12px 14px;border:1px solid #c9c9c5;border-radius:4px;background:#fff;color:#444;font-size:.95rem;margin-bottom:14px}
+.ev-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;display:block;margin-bottom:18px}
+.ev-card h3{font-size:1.2rem;font-weight:300;margin:0 0 6px;color:#fff;line-height:1.3}
+.ev-card .price{font-weight:300;color:rgba(255,255,255,.9);margin:0 0 16px;font-size:.98rem;background:none !important;padding:0 !important;border:0 !important;box-shadow:none !important}
+.ev-card select{width:100%;padding:11px 13px;border:1px solid rgba(255,255,255,.4);border-radius:4px;background:#5f6f5b;color:#fff;font-size:.9rem;margin-bottom:12px}
 .ev-card .btn{margin-top:auto}
 /* questions */
 .ev-q{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(36px,6vw,72px);align-items:start}
@@ -97,7 +103,8 @@
 .ev-field textarea{min-height:130px;resize:vertical}
 /* stay */
 .ev-stay{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:8px}
-@media(max-width:860px){.ev-prods{grid-template-columns:1fr;max-width:440px}.ev-q{grid-template-columns:1fr}}
+@media(max-width:860px){.ev-reg .inner{grid-template-columns:1fr;gap:24px}.ev-filter{display:flex;gap:22px}.ev-q{grid-template-columns:1fr}}
+@media(max-width:620px){.ev-prods{grid-template-columns:1fr;max-width:420px}}
 @media(max-width:560px){.ev-row{grid-template-columns:1fr}}
 </style>
 <script>
@@ -109,50 +116,58 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
 </script>
 
 <div class="cf">
-  <header class="ev-hero band">
-    <div class="w">
-      <h1>Equity Paradox Conference Registration</h1>
-      <p class="eyebrow">November 4 &ndash; 6</p>
-      <p class="lead">This is where the work begins. Register today to join a cross-sector community of leaders, advocates, and change-makers committed to equity in action. Select your path below — attendee or sponsor — and let’s get to work.</p>
-    </div>
-  </header>
-
-  <section>
-    <div class="w">
-      <div class="ev-prods">
-
-        <div class="ev-card">
-          <img src="img/conf/reg-earlybird.jpg" alt="Early Bird Registration">
-          <h3>Early Bird Registration</h3>
-          <p class="price">$600.00</p>
-          <a class="btn block" href="https://www.racialequityinstitute.org/events/p/early-bird-registration" target="_blank" rel="noopener">Select</a>
-        </div>
-
-        <div class="ev-card">
-          <img src="img/conf/reg-sponsor.jpg" alt="Sponsor Registration">
-          <h3>Sponsor Registration</h3>
-          <p class="price">from $2,500.00</p>
-          <select aria-label="Select Sponsor Tier">
-            <option>Select Sponsor Tier</option>
-            <option>Platinum Sponsor — $25,000</option>
-            <option>Gold Sponsor — $15,000</option>
-            <option>Silver Sponsor — $10,000</option>
-            <option>Community Sponsor — $5,000</option>
-            <option>Supporting Sponsor — $2,500</option>
-          </select>
-          <a class="btn block" href="https://www.racialequityinstitute.org/events/p/sponsor-registration" target="_blank" rel="noopener">Select Tier</a>
-        </div>
-
-        <div class="ev-card">
-          <img src="img/conf/reg-bwstour.jpg" alt="Greensboro's Black Wall Street Tour">
-          <h3>Greensboro’s Black Wall Street Tour</h3>
-          <p class="price">$25.00</p>
-          <a class="btn block" href="https://www.racialequityinstitute.org/events/p/greensboro-black-wall-street-tour" target="_blank" rel="noopener">Add-On</a>
-        </div>
-
+  <div class="band">
+    <header class="ev-hero">
+      <div class="w">
+        <h1>Equity Paradox Conference Registration</h1>
+        <p class="eyebrow">November 4 &ndash; 6</p>
+        <p class="lead">This is where the work begins. Register today to join a cross-sector community of leaders, advocates, and change-makers committed to equity in action. Select your path below — attendee or sponsor — and let’s get to work.</p>
       </div>
-    </div>
-  </section>
+    </header>
+
+    <hr class="ev-divider">
+
+    <section class="ev-reg">
+      <div class="w inner">
+        <nav class="ev-filter">
+          <a href="#earlybird">Event Registration</a>
+          <a href="#sponsor">Sponsor Registration</a>
+        </nav>
+        <div class="ev-prods">
+
+          <div class="ev-card" id="bwstour">
+            <img src="img/conf/reg-bwstour.jpg" alt="Greensboro's Black Wall Street Tour">
+            <h3>Greensboro’s Black Wall Street Tour</h3>
+            <p class="price">$25.00</p>
+            <a class="btn light block" href="https://www.racialequityinstitute.org/events/p/greensboro-black-wall-street-tour" target="_blank" rel="noopener">Add-On</a>
+          </div>
+
+          <div class="ev-card" id="sponsor">
+            <img src="img/conf/reg-sponsor.jpg" alt="Sponsor Registration">
+            <h3>Sponsor Registration</h3>
+            <p class="price">from $2,500.00</p>
+            <select aria-label="Select Sponsor Tier">
+              <option>Select Sponsor Tier</option>
+              <option>Platinum Sponsor — $25,000</option>
+              <option>Gold Sponsor — $15,000</option>
+              <option>Silver Sponsor — $10,000</option>
+              <option>Community Sponsor — $5,000</option>
+              <option>Supporting Sponsor — $2,500</option>
+            </select>
+            <a class="btn light block" href="https://www.racialequityinstitute.org/events/p/sponsor-registration" target="_blank" rel="noopener">Select Tier</a>
+          </div>
+
+          <div class="ev-card" id="earlybird">
+            <img src="img/conf/reg-earlybird.jpg" alt="Early Bird Registration">
+            <h3>Early Bird Registration</h3>
+            <p class="price">$600.00</p>
+            <a class="btn light block" href="https://www.racialequityinstitute.org/events/p/early-bird-registration" target="_blank" rel="noopener">Select</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
 
   <section style="background:var(--soft)">
     <div class="w ev-q">
@@ -214,7 +229,7 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606190925></script>
+<script src="js/site.js?v=202606190933></script>
 </body>
 </html>
 
