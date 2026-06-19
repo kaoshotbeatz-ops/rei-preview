@@ -6,15 +6,15 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="dd51b60bc58d67a6c18de8c1db9994ddb4e982fe91a7c91c8da7bb322c6bfdc4" />
+<meta name="csrf-token" content="ebe00ac9bee1273bd7965ac33d19cafeba6b8d7f41abf650e24ea37317e8773b" />
 <title>Equity Paradox Conference Registration · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606191028" />
-<link rel="stylesheet" href="css/theme.css?v=202606191028" />
-<link rel="stylesheet" href="css/pack.css?v=202606191028" />
+<link rel="stylesheet" href="css/site.css?v=202606191033" />
+<link rel="stylesheet" href="css/theme.css?v=202606191033" />
+<link rel="stylesheet" href="css/pack.css?v=202606191033" />
 </head>
 <body>
 
@@ -160,7 +160,7 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
             <img src="img/conf/reg-bwstour.jpg" alt="Greensboro's Black Wall Street Tour">
             <h3>Greensboro’s Black Wall Street Tour</h3>
             <p class="price">$25.00</p>
-            <button type="button" class="btn light block reg-open" data-kicker="Registration" data-product="Greensboro&#39;s Black Wall Street Tour" data-price="$25.00">Add-On</button>
+            <a class="btn light block" href="https://www.racialequityinstitute.org/events/p/greensboro-black-wall-street-tour">Add-On</a>
           </div>
 
           <div class="ev-card" id="sponsor">
@@ -175,14 +175,14 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
               <option>Community Sponsor — $5,000</option>
               <option>Supporting Sponsor — $2,500</option>
             </select>
-            <button type="button" class="btn light block reg-open" data-kicker="Registration / Sponsorship" data-product="Sponsor Registration" data-price="from $2,500.00" data-tier="#sponsorTier">Select Tier</button>
+            <a class="btn light block" href="https://www.racialequityinstitute.org/events/p/sponsor-registration">Select Tier</a>
           </div>
 
           <div class="ev-card" id="earlybird">
             <img src="img/conf/reg-earlybird.jpg" alt="Early Bird Registration">
             <h3>Early Bird Registration</h3>
             <p class="price">$600.00</p>
-            <button type="button" class="btn light block reg-open" data-kicker="Registration" data-product="Early Bird Registration" data-price="$600.00">Select</button>
+            <a class="btn light block" href="https://www.racialequityinstitute.org/events/p/early-bird-registration">Select</a>
           </div>
 
         </div>
@@ -228,43 +228,6 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
     </div>
   </section>
 
-  <!-- In-site registration modal -->
-  <div class="reg-modal" id="regModal" hidden>
-    <div class="reg-overlay" data-close></div>
-    <div class="reg-dialog" role="dialog" aria-modal="true" aria-labelledby="regKicker">
-      <button class="reg-x" type="button" data-close aria-label="Close">&times;</button>
-
-      <form class="reg-form" id="regForm">
-        <p class="reg-kicker" id="regKicker">Registration</p>
-        <p class="reg-prod" id="regProd"></p>
-        <div class="ev-row">
-          <div class="ev-field"><label>First Name <span style="color:#c0392b">(required)</span></label><input name="first" required></div>
-          <div class="ev-field"><label>Last Name <span style="color:#c0392b">(required)</span></label><input name="last" required></div>
-        </div>
-        <div class="ev-field"><label>Email <span style="color:#c0392b">(required)</span></label><input type="email" name="email" required></div>
-        <div class="ev-field"><label>Phone <span style="color:#c0392b">(required)</span></label><input name="phone" required></div>
-        <div class="ev-field"><label>Organization / Business Affiliation</label><input name="org"></div>
-        <div class="ev-field"><label>Do you have any dietary restrictions?</label><input name="diet"></div>
-        <div class="ev-field"><label>How did you hear about us? <span style="color:#c0392b">(required)</span></label>
-          <select name="referral" required>
-            <option value="">Select an option</option>
-            <option>Email</option><option>Social media</option><option>Word of mouth</option>
-            <option>REI website</option><option>A colleague or partner</option><option>Other</option>
-          </select>
-        </div>
-        <button class="btn-red" type="submit" id="regSubmit">Register</button>
-      </form>
-
-      <div class="reg-done" id="regDone" hidden>
-        <div class="ck">&#10003;</div>
-        <h3>You’re on the list!</h3>
-        <p id="regDoneMsg"></p>
-        <p style="margin-top:18px"><button class="btn-red" type="button" data-close>Done</button></p>
-      </div>
-    </div>
-  </div>
-
-  <script src="js/events.js?v=202606191028"></script>
 </div>
 </main>
 <footer role="contentinfo">
@@ -298,7 +261,7 @@ try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')lig
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606191028"></script>
+<script src="js/site.js?v=202606191033"></script>
 </body>
 </html>
 
