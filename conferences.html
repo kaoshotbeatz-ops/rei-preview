@@ -6,15 +6,15 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="bc246d5a0fc26e8ffff98f9cf3929beabb9e942c187420597ac61815f398ab03" />
+<meta name="csrf-token" content="71158571c050244d94d92507c133d86e25da443ed741f92f7521210c18b862eb" />
 <title>The Equity Paradox Conference · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606190857 />
-<link rel="stylesheet" href="css/theme.css?v=202606190857 />
-<link rel="stylesheet" href="css/pack.css?v=202606190857 />
+<link rel="stylesheet" href="css/site.css?v=202606190906 />
+<link rel="stylesheet" href="css/theme.css?v=202606190906 />
+<link rel="stylesheet" href="css/pack.css?v=202606190906 />
 </head>
 <body>
 
@@ -52,6 +52,13 @@
 </header>
 <main id="main" tabindex="-1">
 
+<script>
+/* Conference page is light-only — no dark mode here or on the registration page. */
+(function(){var H=document.documentElement;function light(){H.setAttribute('data-theme','light');}light();
+window.addEventListener('DOMContentLoaded',function(){light();var b=document.getElementById('themeToggle');if(b)b.style.display='none';});
+window.addEventListener('load',light);
+try{new MutationObserver(function(){if(H.getAttribute('data-theme')==='dark')light();}).observe(H,{attributes:true,attributeFilter:['data-theme']});}catch(e){}})();
+</script>
 
 
 <style>
@@ -315,7 +322,7 @@
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606190857></script>
+<script src="js/site.js?v=202606190906></script>
 </body>
 </html>
 
