@@ -508,3 +508,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 
 /* No dark mode on mobile phones — always light, hide toggle */
 @media(max-width:760px){.theme-toggle{display:none!important}}
+
+.fbottom a{display:inline;padding:0 2px}
+.fbottom a:hover{color:#fff!important}
