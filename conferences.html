@@ -6,15 +6,15 @@
 <meta name="color-scheme" content="light dark" />
 <meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
 <meta http-equiv="Pragma" content="no-cache" />
-<meta name="csrf-token" content="3d787a8c52dc733e90a4c1384e14569f843245323c1d2315865558207a6f1205" />
+<meta name="csrf-token" content="bc246d5a0fc26e8ffff98f9cf3929beabb9e942c187420597ac61815f398ab03" />
 <title>The Equity Paradox Conference · Racial Equity Institute</title>
 <meta name="description" content="The Racial Equity Institute helps organizations understand and address structural racism through training, consulting, and the Groundwater Approach." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500;1,6..72,600&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/site.css?v=202606190854 />
-<link rel="stylesheet" href="css/theme.css?v=202606190854 />
-<link rel="stylesheet" href="css/pack.css?v=202606190854 />
+<link rel="stylesheet" href="css/site.css?v=202606190857 />
+<link rel="stylesheet" href="css/theme.css?v=202606190857 />
+<link rel="stylesheet" href="css/pack.css?v=202606190857 />
 </head>
 <body>
 
@@ -67,6 +67,7 @@
 .cf p{font-size:1.05rem;line-height:1.8;margin:0 0 1rem;font-weight:300}
 .cf .btn{display:inline-block;background:var(--band);color:#fff;padding:.95em 2.4em;border-radius:999px;font-weight:300;font-size:.95rem;letter-spacing:.04em;border:0;cursor:pointer}
 .cf .btn:hover{background:var(--g2)}
+.cf .btn.dark{background:#1a1a1a}.cf .btn.dark:hover{background:#000}
 .cf .btn.block{display:block;text-align:center}
 .cf .band{background:var(--band);color:#fff}
 .cf .band h1,.cf .band h2,.cf .band h3{color:#fff}.cf .band p{color:rgba(255,255,255,.92)}
@@ -87,26 +88,30 @@
 .cf .ul li{padding-left:26px;position:relative;font-weight:300}.cf .ul li::before{content:"\2731";position:absolute;left:0;color:#fff}
 .cf .ul.two{grid-template-columns:1fr 1fr;gap:14px 30px}
 @media(max-width:760px){.cf .ul.two{grid-template-columns:1fr}}
-.cf details{max-width:760px;margin-bottom:10px}
-.cf summary{list-style:none;cursor:pointer;background:var(--band);color:#fff;padding:16px 22px;border-radius:6px;font-size:1.3rem;font-weight:300;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.cf .accord{max-width:760px;margin:0 auto}
+.cf details{border-top:1px solid #d9d9d6}
+.cf .accord details:last-of-type{border-bottom:1px solid #d9d9d6}
+.cf summary{list-style:none;cursor:pointer;background:transparent;color:#2a2a2a;padding:24px 2px;font-size:clamp(1.4rem,2.6vw,1.7rem);font-weight:300;display:flex;justify-content:space-between;gap:16px;align-items:center}
 .cf summary::-webkit-details-marker{display:none}
-.cf summary::after{content:"+";color:#fff;font-size:1.6rem;font-weight:300}
+.cf summary::after{content:"+";color:#2a2a2a;font-size:1.7rem;font-weight:200;line-height:1}
 .cf details[open] summary::after{content:"\2013"}
-.cf details .b{padding:22px 4px 26px;color:#444}
-.cf details .b em{color:#444}
-.cf details ul{margin:14px 0 0;padding-left:22px;list-style:disc}.cf details li{font-size:.98rem;margin-bottom:8px;font-weight:300}
-.cf .days{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:44px}
-.cf .day{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);border-radius:16px;overflow:hidden}
-.cf .day img{width:100%;height:200px;object-fit:cover;display:block}
-.cf .day .db{padding:22px}
-.cf .day .dn{color:#fff;font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.78rem;opacity:.85}
-.cf .ag{list-style:none;padding:14px 0 0;margin:12px 0 0;border-top:1px solid rgba(255,255,255,.25)}
-.cf .ag li{display:flex;justify-content:space-between;gap:12px;font-size:.86rem;padding:7px 0;color:rgba(255,255,255,.85)}
-.cf .ag li b{font-weight:400;color:#fff}.cf .ag li span{color:rgba(255,255,255,.7);white-space:nowrap}
+.cf details .b{padding:4px 2px 30px;color:#444}
+.cf details .b em{color:#444;font-style:italic}
+.cf details ul{margin:22px 0 0;padding-left:22px;list-style:disc}.cf details li{font-size:1rem;margin-bottom:12px;font-weight:300;line-height:1.5}
+.cf .sched{display:grid;gap:clamp(64px,9vw,120px);margin-top:56px}
+.cf .sday{display:grid;grid-template-columns:minmax(0,460px) 1fr;gap:clamp(40px,6vw,96px);align-items:start}
+.cf .sday img{width:100%;height:100%;max-height:940px;object-fit:cover;display:block;border-radius:2px}
+.cf .sday .dn{color:#fff;font-weight:400;font-size:1.05rem;margin:0 0 16px;opacity:.95}
+.cf .sday h3{font-size:clamp(1.9rem,3.6vw,2.9rem);font-weight:300;color:#fff;line-height:1.12;margin:0 0 28px}
+.cf .sday .sdesc{color:rgba(255,255,255,.9);font-size:.95rem;line-height:1.7;max-width:62ch;margin:0 0 44px;font-weight:300}
+.cf .agenda{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.45)}
+.cf .agenda li{display:grid;grid-template-columns:1fr 1fr;gap:24px;padding:26px 2px;border-bottom:1px solid rgba(255,255,255,.45);align-items:start}
+.cf .agenda b{font-weight:400;color:#fff;font-size:1.15rem;line-height:1.3}
+.cf .agenda span{color:#fff;font-size:1.15rem;font-weight:300}
 .cf .stay{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
 .cf .stay img{width:100%;height:230px;object-fit:cover;border-radius:14px;display:block}
 .cf .regsplit{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-@media(max-width:860px){.cf .row,.cf .regsplit{grid-template-columns:1fr}.cf .days{grid-template-columns:1fr}}
+@media(max-width:860px){.cf .row,.cf .regsplit{grid-template-columns:1fr}.cf .sday{grid-template-columns:1fr;gap:28px}}
 @media(max-width:760px){.cf .stay{grid-template-columns:1fr}}
 </style>
 
@@ -193,44 +198,88 @@
   </section>
 
   <section id="sponsors">
-    <div class="w row" style="align-items:start">
-      <div>
+    <div class="w">
+      <div style="text-align:center;margin-bottom:48px">
         <p class="eyebrow">Sponsorship Opportunities</p>
         <h2>Partner with us</h2>
-        <details open><summary>Platinum Sponsor — $25,000</summary><div class="b"><em>The highest level of partnership.</em> As Presenting Sponsor your brand is woven throughout the entire conference.<ul><li>Recognition as Presenting Sponsor across all materials</li><li>Opportunity to provide opening remarks</li><li>Top-tier logo on website, program &amp; signage</li><li>Dedicated social media spotlight</li><li>Vendor table + premium placement</li><li>5 complimentary registrations</li></ul></div></details>
-        <details><summary>Gold Sponsor — $15,000</summary><div class="b"><em>Make a bold statement.</em><ul><li>Prominent logo on all materials</li><li>Recognition during keynote session</li><li>Social media recognition</li><li>Vendor table</li><li>4 complimentary registrations</li></ul></div></details>
-        <details><summary>Silver Sponsor — $10,000</summary><div class="b"><em>Meaningful presence, real impact.</em><ul><li>Logo on website and program</li><li>Recognition during sessions</li><li>Vendor table</li><li>3 complimentary registrations</li></ul></div></details>
-        <details><summary>Community Sponsor — $5,000</summary><div class="b"><em>Show up for the community.</em><ul><li>Logo listed on website and program</li><li>Verbal recognition</li><li>2 complimentary registrations</li></ul></div></details>
-        <details><summary>Supporting Sponsor — $2,500</summary><div class="b"><em>Every contribution counts.</em><ul><li>Name listed in program and website</li><li>1 complimentary registration</li></ul></div></details>
-        <div style="margin-top:26px"><a class="btn" href="https://www.racialequityinstitute.org/events/p/sponsor-registration" target="_blank" rel="noopener">Sponsor Registration</a></div>
       </div>
-      <img src="img/conf/day1.png" alt="" style="border-radius:16px">
+      <div class="accord">
+        <details><summary>Platinum Sponsor — $25,000</summary><div class="b"><em>The highest level of partnership, built for organizations ready to lead.</em> As Presenting Sponsor, your brand is woven throughout the entire conference experience — from opening remarks to closing moments.<ul><li>Recognition as Presenting Sponsor across all materials</li><li>Opportunity to provide opening remarks</li><li>Logo placement (top tier) on website, program, and signage</li><li>Dedicated social media spotlight</li><li>Vendor table + premium placement</li><li>5 complimentary registrations</li></ul></div></details>
+        <details><summary>Gold Sponsor — $15,000</summary><div class="b"><em>Make a bold statement where it counts.</em> Gold Sponsors receive prominent visibility and direct recognition during our keynote session — one of the conference's highest-traffic moments.<ul><li>Prominent logo placement on all materials</li><li>Recognition during keynote session</li><li>Social media recognition</li><li>Vendor table</li><li>4 complimentary registrations</li></ul></div></details>
+        <details><summary>Silver Sponsor — $10,000</summary><div class="b"><em>Meaningful presence, real impact.</em> Silver Sponsors are woven into the fabric of the conference with consistent visibility across sessions and materials.<ul><li>Logo placement on website and program</li><li>Recognition during sessions</li><li>Vendor table</li><li>3 complimentary registrations</li></ul></div></details>
+        <details><summary>Community Sponsor — $5,000</summary><div class="b"><em>Show up for the community.</em> This tier is designed for organizations that want to demonstrate their commitment to equity without a large investment — your support still moves the work forward.<ul><li>Logo listed on website and program</li><li>Verbal recognition</li><li>2 complimentary registrations</li></ul></div></details>
+        <details><summary>Supporting Sponsor — $2,500</summary><div class="b"><em>Every contribution counts.</em> Supporting Sponsors help make this conference possible and are recognized as valued partners in the movement toward equity and justice.<ul><li>Name listed in program and website</li><li>1 complimentary registration</li></ul></div></details>
+      </div>
+      <div style="text-align:center;margin-top:40px"><a class="btn" href="https://www.racialequityinstitute.org/events/p/sponsor-registration" target="_blank" rel="noopener">Sponsor Registration</a></div>
     </div>
   </section>
 
   <section id="schedule" class="band">
     <div class="w">
-      <p class="eyebrow" style="text-align:center">Schedule</p>
-      <h1 style="text-align:center">Three days of real work</h1>
-      <div class="days">
-        <div class="day"><img src="img/conf/day2.png" alt=""><div class="db"><span class="dn">Day One</span><h3>Arrive, Ground Yourself &amp; Go Deep</h3><p style="font-size:.95rem;color:rgba(255,255,255,.85)">We settle in, make connections, and dive into the science — exploring Fish Lake’s watershed and the neuroscience behind it; the afternoon examines how equity practices take root in the workplace.</p><ul class="ag"><li><b>Check-In</b><span>9:00–9:30am</span></li><li><b>Opening: Groundwater &amp; Neuroscience</b><span>11:00am</span></li><li><b>Lunch</b><span>12:30–1:30pm</span></li><li><b>Groundwater Institute Session</b><span>2:00–4:00pm</span></li><li><b>Debrief &amp; Q&amp;A</b><span>4:00–5:00pm</span></li></ul></div></div>
-        <div class="day"><img src="img/conf/day3.png" alt=""><div class="db"><span class="dn">Day Two</span><h3>Apply &amp; Build</h3><p style="font-size:.95rem;color:rgba(255,255,255,.85)">We turn knowledge into practice. Morning focuses on application; afternoon builds the capacity to carry it forward.</p><ul class="ag"><li><b>Check-In</b><span>9:00am</span></li><li><b>How to Apply the Analysis</b><span>10:00am</span></li><li><b>Lunch</b><span>12:30–1:30pm</span></li><li><b>Cross-Systems Collaboration</b><span>2:00–4:00pm</span></li><li><b>Debrief &amp; Q&amp;A</b><span>4:00–5:00pm</span></li></ul></div></div>
-        <div class="day"><img src="img/conf/purpose.png" alt=""><div class="db"><span class="dn">Day Three</span><h3>Root in Community &amp; Carry It Forward</h3><p style="font-size:.95rem;color:rgba(255,255,255,.85)">We close where it matters most. The morning centers community power, and we end together over a closing luncheon.</p><ul class="ag"><li><b>Check-In</b><span>9:00am</span></li><li><b>Centering Community Power</b><span>10:00–11:00am</span></li><li><b>Closing Luncheon</b><span>12:30–2:00pm</span></li></ul></div></div>
+      <div class="sched">
+
+        <div class="sday">
+          <img src="img/conf/day2.png" alt="">
+          <div>
+            <p class="dn">Day One</p>
+            <h3>Arrive, Ground Yourself &amp; Go Deep</h3>
+            <p class="sdesc">We settle in, make connections, and dive into the science — exploring Fish Lake’s watershed and the neuroscience behind how we understand it. The afternoon examines how equity practices take root and sustain over time in the workplace.</p>
+            <ul class="agenda">
+              <li><b>Check-In</b><span>9:00 – 9:30am</span></li>
+              <li><b>Opening session:<br>Fish Lake Groundwater and Neuroscience Activity</b><span>11:00am</span></li>
+              <li><b>Lunch Break</b><span>12:30 – 1:30pm</span></li>
+              <li><b>Groundwater Institute Session</b><span>2:00 – 4:00pm</span></li>
+              <li><b>Debrief and Q&amp;A</b><span>4:00 – 5:00pm</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sday">
+          <img src="img/conf/day3.png" alt="">
+          <div>
+            <p class="dn">Day Two</p>
+            <h3>Apply &amp; Build</h3>
+            <p class="sdesc">We turn knowledge into practice. Morning focuses on application; afternoon is dedicated to building the capacity to carry it forward.</p>
+            <ul class="agenda">
+              <li><b>Check-In</b><span>9:00am</span></li>
+              <li><b>How to apply the analysis</b><span>10:00am</span></li>
+              <li><b>Lunch Break</b><span>12:30 – 1:30pm</span></li>
+              <li><b>Cross Systems Collaboration</b><span>2:00 – 4:00pm</span></li>
+              <li><b>Debrief and Q&amp;A</b><span>4:00 – 5:00pm</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sday">
+          <img src="img/conf/purpose.png" alt="">
+          <div>
+            <p class="dn">Day Three</p>
+            <h3>Root in Community &amp; Carry It Forward</h3>
+            <p class="sdesc">We close where it matters most. The morning centers community power, and we end together over a closing luncheon.</p>
+            <ul class="agenda">
+              <li><b>Check-In</b><span>9:00am</span></li>
+              <li><b>Centering Community Power</b><span>10:00 – 11:00am</span></li>
+              <li><b>Closing Luncheon</b><span>12:30 – 2:00pm</span></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
   <section id="stay" style="background:var(--soft)">
     <div class="w">
-      <p class="eyebrow">Book Your Stay</p>
-      <h1>The Proximity Hotel</h1>
-      <p style="max-width:760px">For attendees traveling in, we’re proud to recommend Proximity Hotel as our partner for conference lodging. An employee-trust-owned hotel in Greensboro, Proximity pairs LEED Platinum sustainability and Four Diamond comfort with values that align with our work — including a publicly stated commitment to racial justice and fairness. Reserve within our group block to settle in at our special rate.</p>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:8px">
+        <h1 style="margin:0">Book Your Stay</h1>
+        <a class="btn dark" href="https://www.reseze.net/servlet/SendPage?hotelid=1466&amp;skipfirstpage=true&amp;page=588589" target="_blank" rel="noopener">Reserve At Our Group Rate</a>
+      </div>
+      <p style="max-width:62ch">For attendees traveling in, we’re proud to recommend Proximity Hotel as our partner for conference lodging. An employee-trust-owned hotel in Greensboro, Proximity pairs LEED Platinum sustainability and Four Diamond comfort with values that align with our work — including a publicly stated commitment to racial justice and fairness. Reserve within our group block to settle in at our special rate.</p>
       <div class="stay">
         <img src="img/conf/hotel-lounge.jpg" alt="Proximity Hotel lounge">
         <img src="img/conf/hotel-pool.png" alt="Proximity Hotel pool">
         <img src="img/conf/hotel-fitness.jpg" alt="Proximity Hotel fitness studio">
       </div>
-      <a class="btn" href="https://www.reseze.net/servlet/SendPage?hotelid=1466&amp;skipfirstpage=true&amp;page=588589" target="_blank" rel="noopener">Reserve At our group rate</a>
     </div>
   </section>
 </div>
@@ -266,7 +315,7 @@
   </div>
 </footer>
 <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false"><span class="ti-ico">🌙</span><span class="ti-txt">Dark mode</span></button>
-<script src="js/site.js?v=202606190854></script>
+<script src="js/site.js?v=202606190857></script>
 </body>
 </html>
 
